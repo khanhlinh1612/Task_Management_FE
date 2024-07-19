@@ -1,0 +1,65 @@
+.navbar{
+    background-color: #3AA8A8;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:8vh;
+    width: 100vw;
+    z-index: 2;
+  }
+  .brand{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: medium;
+  }
+  .info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+  }
+  .nav-script{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight:bold;
+  }
+  a.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+  }
+  .avatar{
+    border-radius: 50%;
+  }
+  .info-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 3%;
+  }
+  .form-control {
+    width: 100%;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-control:hover {
+    border-color: #007BFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }

@@ -1,0 +1,95 @@
+@keyframes moveSphere {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #18a5a7, #bfffc7);
+  position: relative;
+  overflow: hidden;
+}
+
+.sphere {
+  position: absolute;
+  top: calc(3%);
+  left: calc(48.4%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 192, 203, 0.6);
+  box-shadow:  0 4px 8px rgba(255, 105, 180, 0.4);
+  animation: moveSphere 5s ease-in-out infinite;
+  z-index: 0;
+}
+
+.register-contain {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 30%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #1abc9c;
+}
+
+.label-register {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input-register {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-register.is-invalid {
+  border-color: #ff4d4f;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+  color: #ff4d4f;
+}
+
+#register-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 50%;
+  margin-left: 25%;
+  transition: background-color 0.3s ease;
+}
+
+#register-button:hover {
+  background-color: #0056b3;
+}
